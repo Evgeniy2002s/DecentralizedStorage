@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Storage</title>
+</head>
+<body>
+    <h1>Decentralized Storage</h1>
+
+    <h2>Upload File</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadFile()">Upload File</button>
+    <div id="uploadStatus"></div>
+
+    <hr>
+
+    <h2>Get File Information</h2>
+    <button onclick="getLastFileID()">Get Last File ID</button> 
+    <div id="lastFileIdDisplay"></div>
+
+    <hr>
+    <h2>Get File</h2>
+    <input type="text" id="fileIdInput" placeholder="Enter File ID">
+    <button onclick="getFile()">Get File</button>
+    
+    <!-- Элемент для отображения FileID -->
+    <div id="fileIdDisplay"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
